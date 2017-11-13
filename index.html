@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="touch svg">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="initial-scale=1, width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/ipad-app.css" />
+        <link rel="stylesheet" type="text/css" href="css/materialPreloader.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+        <link href="http://publishers-institute.biblesocieties.org/stylesheets/base-colors-user.css?6" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/stylesheets/default-styles.css?11" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/stylesheets/styles-user.css?5" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/stylesheets/extra-user.css?5" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/stylesheets/fonts/font-all.css?5" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/stylesheets/facebox.css?5" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/stylesheets/themes/teal_portal.css?5" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/stylesheets/jquery-ui-new.css?5" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/stylesheets/jquery.ui.theme.css?5" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/javascripts/plugins/mmenu/extensions/jquery.mmenu.positioning.css?4" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://publishers-institute.biblesocieties.org/javascripts/plugins/mmenu/jquery.mmenu.css?4" media="screen" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript">
+            function is_mobile_app_mode(){
+                return true;
+            }
+        function is_left_nav_mode(){
+            return true;
+        }
+        function is_mobile_device(){
+            return true;
+        }
+        </script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="cordova_plugins.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/plugins/materialPreloader.min.js"></script>
+        <script type="text/javascript" src="http://publishers-institute.biblesocieties.org/javascripts/plugins/jquery.menu-aim.js?4"></script>
+        <script type="text/javascript" src="http://publishers-institute.biblesocieties.org/javascripts/functions.js?154"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="http://publishers-institute.biblesocieties.org/javascripts/jquery-caret-ui-timepicker.js?4"></script>
+        <script type="text/javascript" src="http://publishers-institute.biblesocieties.org/javascripts/jquery.tools-1.2.4-min.js?4"></script>
+        <script type="text/javascript" src="http://publishers-institute.biblesocieties.org/javascripts/plugins/mmenu/jquery.mmenu.min.all.js?4"></script>
+        <script type='text/javascript'>plugin_version=19;window.maxUploadLimit = '300mb';</script>
+        <script type="text/javascript" src="http://publishers-institute.biblesocieties.org/libraries/tinymce/4.2.7/js/tinymce/tinymce.min.js?24"></script>
+        <script type="text/javascript" src="js/tinymce.js"></script>
+        <script type="text/javascript">
+            try {
+                app.initialize();
+            } catch (err) {
+                document.getElementById('alertBlock').innerHTML = err.message;
+            }
+        </script>
+        <title>neo LMS</title>
+    </head>
+    <body class="left-nav new-left-nav flat tablet-nav new_ui">
+    <div id="splashScreen"></div>
+        <div id="mobileAppWrapper">
+            <header></header>
+            <div id="courseToolbar"></div>
+            <nav role="navigation" id="leftColumn">
+                <ol class="thinMainNav"></ol>
+            </nav>
+            <iframe src="blank.html" frameborder="0" id="contentFrame" name="contentFrame" onload="try { app.loadComplete(); } catch (err) { document.getElementById('alertBlock').innerHTML = err.message; }" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            <div id="infoBar" role="navigation">
+                <p id="versionBlock">1.00</p>
+                <p class="alert" id="alertBlock">Loading...</p>
+                <a href="javascript:app.reloadPage();" class="loaderBlock" id="loaderBlock"></a>
+                <a href="javascript:app.goHome();" class="homeButton" id="homeButton"><i class="home inverted"></i></a>
+                <a href="javascript:void(0);" class="arrowLeft" id="arrowLeft"></a>
+                <a href="javascript:void(0);" class="arrowRight" id="arrowRight"></a>
+            </div>
+            <div id="loadingOverlay">
+                <div class="overlay"></div>
+                <span>Loading...</span>
+            </div>
+            <div id="facebox" class="editorContainer">
+                <div class="popup">
+                    <a href="#" class="close sendContent" style="z-index: 100; display: block;"></a>
+                    <div id="faceboxContent" class="content" style="position: relative; z-index: 1; display: inline-block;">
+                        <div class="header">
+                            <h4>Content editor</h4>
+                        </div>
+                        <div class="facebox-content">
+                            <textarea id="editorContent"></textarea>
+                            <div id="filecontainer"><div id="filelist"></div></div>
+                        </div>
+                        <div class="footer">
+                            <button name="commit" class="sendContent"><img class="popin" style="margin-top:4px" src="http://publishers-institute.biblesocieties.org/images/icons/pop-in.png" /></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

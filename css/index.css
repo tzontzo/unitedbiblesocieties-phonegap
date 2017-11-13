@@ -1,0 +1,108 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    margin: 0;
+    padding:0px;
+    width:100%;
+    background-size: cover;
+}
+
+/*#mobileAppWrapper{position:relative; z-index:2; width:100%}*/
+#contentFrame {margin-bottom: 36px}
+
+#loadingOverlay{position:fixed;top:0;z-index:999;display:none;}
+    #loadingOverlay .overlay{opacity: 0.6;filter: alpha(opacity=60);background: #1a517c;width:100%;height:100%;position:absolute}
+    #loadingOverlay span{position:absolute;top:50%;left:50%;color:#fff;font-size:19px;margin-left: -60px;margin-top:-18px;padding: 10px;background-color:#038497}
+
+header{display:none;top:0;}
+#chatContainer{bottom:22px}
+#courseToolbar{
+    position:fixed;
+    display:none;
+    padding-top:19px;
+    padding-left: 15px;
+    right: 0;
+    padding-right: 15px
+}
+
+nav#leftColumn{width: 0; height: 0; padding: 0 !important; overflow: visible;position: static;display:none}
+nav#leftColumn ol.thinMainNav{height:100%;margin-left:0;top:44px}
+@media screen and (max-width:979px) {
+    nav#leftColumn, #courseToolbar{display:none !important}
+}
+
+.editorContainer{display:none;}
+#facebox{position: absolute; top: 0;}
+#facebox .footer{
+    position: fixed;
+    bottom: 10px;
+    right: 0px
+}
+
+#editor_save_btn{
+    background-color: #048497;
+    color: #fff;
+    float: right;
+    padding: 0 10px;
+    margin: 10px 7px 10px 0;
+    line-height: 28px;
+}
+
+#infoBar, #contentFrame {display: none}
+@media (max-width: 1920px) and (orientation: landscape) {
+    body {background-image: url('../splash_screens/drawable-land-xxxhdpi-screen.png')}
+}
+@media (max-width: 1600px) and (orientation: landscape) {
+    body {background-image: url('../splash_screens/drawable-land-xxhdpi-screen.png')}
+}
+@media (max-width: 1280px) and (orientation: landscape) {
+    body {background-image: url('../splash_screens/drawable-land-xhdpi-screen.png')}
+}
+@media (max-width: 800px) and (orientation: landscape) {
+    body {background-image: url('../splash_screens/drawable-land-hdpi-screen.png')}
+}
+@media (max-width: 480px) and (orientation: landscape) {
+    body {background-image: url('../splash_screens/drawable-land-mdpi-screen.png')}
+}
+@media (max-width: 320px) and (orientation: landscape) {
+    body {background-image: url('../splash_screens/drawable-land-ldpi-screen.png')}
+}
+@media (max-width: 1280px) and (orientation: portrait) {
+    body {background-image: url('../splash_screens/drawable-port-xxxhdpi-screen.png')}
+}
+@media (max-width: 960px) and (orientation: portrait) {
+    body {background-image: url('../splash_screens/drawable-port-xxhdpi-screen.png')}
+}
+@media (max-width: 720px) and (orientation: portrait) {
+    body {background-image: url('../splash_screens/drawable-port-xhdpi-screen.png')}
+}
+@media (max-width: 480px) and (orientation: portrait) {
+    body {background-image: url('../splash_screens/drawable-port-hdpi-screen.png')}
+}
+@media (max-width: 320px) and (orientation: portrait) {
+    body {background-image: url('../splash_screens/drawable-port-mdpi-screen.png')}
+}
+@media (max-width: 240px) and (orientation: portrait) {
+    body {background-image: url('../splash_screens/drawable-port-ldpi-screen.png')}
+}
+
